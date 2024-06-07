@@ -1,0 +1,25 @@
+let inpputBox= document .getElementById('input box')
+let buttons= document .querySelectorAll('button')
+
+let string = ''
+
+buttons.forEach(Element =>{
+Element.addEventListener('click',(b)=>[
+if(b.target.inerText == '='){
+    string = string(eval(string))
+    inpputBox . value =string;
+}
+  
+else{
+string += b .target.inerText
+inpputBox.value=string
+}
+
+
+
+] )
+
+
+
+})
+

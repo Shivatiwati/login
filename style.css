@@ -1,129 +1,78 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 1px;
 
+}
 body{
-    width: 100vw;
-    height: 100vh;
-    background: url(./hacker\ world.jpg)no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+min-width: 100vh;
+max-width: 100;
+display: flex;
+justify-content: center;
+align-items: center;
+background:linear-gradient(45deg, #0a0a0a, #3a4452)
+
 }
 
-.container
-{
-    width: 400px;
-    height: 500px;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    border-radius: 20px;
-    border: 3px solid rgba(255, 255, 255, 0.5);
+.calculator{
+padding: 15px;
+box-shadow: 0 0 15px #000;
+border: 2px solid rgb(116,114,114);
+border-radius: 15px;
 }
 
-h2
-{
-    color: #ffff;
-    font-size: 2em;
-    text-transform: uppercase;
-    padding: 20px 0;
+.display input{
+ width: 360px;
+border: none;
+outline: auto;
+padding: 20px;
+margin: 10px;
+background: transparent;
+color: #fff;
+font-size: 40px;
+text-align: right;
+cursor: pointer;
+
+}
+input ::placeholder{
+color: #fff;
+
 }
 
-.form-group
-{
-    position: relative;
-    width: 330px;
-    margin: 30px 0;
-    border-bottom: 3px solid #ffff;
+button{
+width: 70px;
+height: 70;
+margin: 10px;
+background: transparent;
+color: #fff;
+font-size: 22px;
+font-weight: 600;
+border: 0;
+border-radius: 50%;
+box-shadow:  -5px --6px 15px #000;
+outline: 1px solid #313131;
+outline-offset: 3px;
+cursor: pointer;
+
+}
+button.active{
+background: #000;
+transform: translate(2px,2px);
+
 }
 
-.form-group input
-{
-    width: 100%;
-    height: 50px;
-    padding: 0 35px 0 10px;
-    font-size: 1.2em;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
+.opr{
+color: #fbff00;
+background: #1e1919;
+font-weight: 700;
 }
 
-.form-group label
-{
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    font-size: 1.2em;
-    color: #fff;
-    transition: 0.5s;
+#eqBtn{
+background: orangered;
+font-weight: 900;
+
 }
 
-input:focus ~ label,
-input:valid ~ label
-{
-    top: -5px;
-}
 
-.form-group i
-{
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    color: #ffff;
-    font-size: 1.2em;
-}
-
-p
-{
-    text-align: center;
-    color: #fff;
-    margin: 10px 0;
-}
-
-p>a
-{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-}
-
-p>a:hover
-{
-    text-decoration: underline;
-    font-style: italic;
-}
-
-#btn
-{
-    width: 100%;
-    height: 50px;
-    border-radius: 40px;
-    border: none;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-
-#btn:hover
-{
-    background: rgba(0, 0, 0, 0.3);
-    color: #fff;
-}
